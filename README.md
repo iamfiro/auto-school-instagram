@@ -1,4 +1,4 @@
-> sunrin-instagram-cli
+> sunrin-instagram
 
 
 <br/>
