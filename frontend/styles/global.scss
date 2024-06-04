@@ -1,0 +1,21 @@
+:root {
+    --color-background: #60BE6B;
+    --color-background-light: #70CB8B;
+    --color-background-lighter: #7ed598;
+    --color-background-white: #dff5e2;
+
+    --color-white: #fff;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button, input {
+    font-family: inherit;
+}
