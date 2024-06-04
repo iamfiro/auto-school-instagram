@@ -8,6 +8,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    user-select: none; // 드래그 방지
 }
 
 // Box
