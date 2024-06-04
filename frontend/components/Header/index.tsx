@@ -7,6 +7,7 @@ import { IoMdAdd } from "react-icons/io";
 import { FaCloudUploadAlt } from "react-icons/fa";
 import { SiDocsdotrs } from "react-icons/si";
 
+// 박스 컴포넌트
 function Box({ children }: { children: ReactNode }) {
     return (
         <div className={style.box}>
@@ -15,6 +16,7 @@ function Box({ children }: { children: ReactNode }) {
     )
 }
 
+// 날짜 선택 버튼
 function DatePicker() {
     return (
         <div className={style.dateContainer}>
@@ -29,6 +31,7 @@ function DatePicker() {
     )
 }
 
+// 인스타그램 수동 업로드 버튼
 function ManualUploadButton() {
     return (
         <button className={style.manualUploadButton}>
@@ -38,6 +41,7 @@ function ManualUploadButton() {
     )
 }
 
+// 날짜 추가하기 버튼
 function CreateMealButton() {
     return (
         <>
@@ -49,6 +53,7 @@ function CreateMealButton() {
     )
 }
 
+// API 문서 바로가기 버튼
 function APIDocsButton() {
     return ( //TODO: Add link to API Docs
         <a className={style.apiDocsButton} target="_blank">
