@@ -6,7 +6,10 @@ export default function Home() {
     return (
         <main className={style.container}>
             <Header>
-                <Header.DatePicker />
+                <Header.Box>
+                    <Header.DatePicker />
+                    <Header.CurrentSchool />
+                </Header.Box>
                 <Header.Box>
                     <Header.APIDocs />
                     <Header.ManualUpload />

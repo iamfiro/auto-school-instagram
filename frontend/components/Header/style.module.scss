@@ -103,7 +103,7 @@
 
 // Manual Upload Button
 
-.manualUploadButton {
+.manualUploadButton, .currentSchool {
     height: 35px;
 
     display: flex;
@@ -129,6 +129,7 @@
         color: var(--color-white);
 
         font-weight: 500;
+        font-size: 13px;
     }
 
     svg {
