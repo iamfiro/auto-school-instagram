@@ -1,3 +1,11 @@
 .container {
+    min-height: 100vh;
+
     background-color: var(--color-background);
+}
+
+.boardContainer {
+    display: flex;
+
+    padding: 10px 0 20px 0;
 }
