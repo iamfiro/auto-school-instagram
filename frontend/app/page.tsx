@@ -1,6 +1,5 @@
 import style from "@/styles/page.module.scss";
-import { Header } from "@/components";
-import Board from "@/components/Board";
+import { Header, Board } from "@/components";
 
 export default function Home() {
     return (
