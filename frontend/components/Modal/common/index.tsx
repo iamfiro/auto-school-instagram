@@ -16,7 +16,7 @@ function Top({ children, icon, color }: TopProps) {
     const handleClose = () => {
         router.push('/')
     }
-    
+
     return (
         <div className={style.top}>
             <div className={style.left}>
@@ -30,9 +30,15 @@ function Top({ children, icon, color }: TopProps) {
     )
 }
 
-function Backdrop({ onClick, children }: { onClick?: () => void, children: React.ReactNode }) {
+function Backdrop({ children }: { children: React.ReactNode }) {
+    const router = useRouter();
+
+    const handleClose = () => {
+        router.push('/')
+    }
+
     return (
-        <div onClick={onClick} className={style.backdrop}>
+        <div onClick={handleClose} className={style.backdrop}>
             {children}
         </div>
     );
