@@ -59,4 +59,9 @@
     &:active {
         background-color: var(--color-charcoal);
     }
+
+    &:disabled {
+        background-color: var(--color-gray-light);
+        cursor: not-allowed;
+    }
 }
