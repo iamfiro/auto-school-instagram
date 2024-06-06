@@ -7,6 +7,7 @@ import { IoMdAdd } from "react-icons/io";
 import { FaCloudUploadAlt } from "react-icons/fa";
 import { SiDocsdotrs } from "react-icons/si";
 import { TbSchool } from "react-icons/tb";
+import Link from "next/link";
 
 // 박스 컴포넌트
 function Box({ children }: { children: ReactNode }) {
@@ -20,10 +21,10 @@ function Box({ children }: { children: ReactNode }) {
 // 현재 학교 컴포넌트
 function CurrentSchool() {
     return (
-        <div className={style.currentSchool}>
+        <Link href={'/?m=s'} className={style.currentSchool}>
             <TbSchool />
             <span>선린인터넷고등학교</span>
-        </div>
+        </Link>
     )
 }
 
