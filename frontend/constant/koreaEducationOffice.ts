@@ -1,4 +1,4 @@
-const koreaEducationOffice: Array<{ label: string, value: string }> = [
+export const koreaEducationOffice: Array<{ label: string, value: string }> = [
     { label: '서울특별시교육청', value: '1' },
     { label: '부산광역시교육청', value: '2' },
     { label: '대구광역시교육청', value: '3' },
