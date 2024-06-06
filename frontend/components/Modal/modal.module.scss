@@ -1,0 +1,56 @@
+// 학교 선택 모달
+.selectedSchool {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 15px;
+
+    h2 {
+        margin: 0;
+
+        font-size: 14px;
+        font-weight: 500;
+
+        color: var(--color-gray);
+    }
+
+    // 오른쪽
+    div {
+        display: flex;
+        align-items: center;
+
+        span {
+            font-size: 14px;
+            font-weight: 500;
+    
+            color: var(--color-gray);
+        }
+        
+        svg {
+            margin-right: 5px;
+
+            color: var(--color-gray);
+        }
+    }
+}
+
+.submit {
+    width: 100%;
+    height: 40px;
+
+    margin-top: 20px;
+
+    border: none;
+    border-radius: var(--border-radius);
+
+    color: var(--color-white);
+    background-color: var(--color-black);
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    &:active {
+        background-color: var(--color-charcoal);
+    }
+}

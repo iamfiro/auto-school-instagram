@@ -1,9 +1,8 @@
 import Modal from "./common";
 import { TbSchool } from "react-icons/tb";
 import style from "./modal.module.scss";
-import Link from "next/link";
 
-function ModalSchoolSetting() {
+function ModalSchoolEdit() {
     return (
         <Modal.Backdrop>
             <Modal>
@@ -15,10 +14,10 @@ function ModalSchoolSetting() {
                         <span>선린인터넷고등학교</span>
                     </div>
                 </div>
-                <Link href={'/?m=se'} className={style.submit}>눌러서 학교 수정하기</Link>
+                <button className={style.submit}>눌러서 학교 수정하기</button>
             </Modal>
         </Modal.Backdrop>
     );
 }
 
-export default ModalSchoolSetting;
+export default ModalSchoolEdit;

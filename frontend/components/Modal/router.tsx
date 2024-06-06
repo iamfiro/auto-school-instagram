@@ -2,6 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 import ModalSchoolSetting from "./SchoolModal";
+import ModalSchoolEdit from "./SchoolEditModal";
 
 function ModalRouter() {
     const param = useSearchParams();
@@ -10,7 +11,8 @@ function ModalRouter() {
     switch (query) {
         case "s":
             return <ModalSchoolSetting />;
-            break;
+        case "se":
+            return <ModalSchoolEdit />;
         default:
             return null;
     }

@@ -46,7 +46,7 @@ function Backdrop({ children }: { children: React.ReactNode }) {
 
 function Modal({ children }: { children: React.ReactNode }) {
     return (
-        <div className={style.modal}>
+        <div className={style.modal} onClick={(e) => e.stopPropagation()}>
             {children}
         </div>
     );
