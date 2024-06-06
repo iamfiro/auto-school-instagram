@@ -6,7 +6,7 @@ function ModalSchoolEdit() {
     return (
         <Modal.Backdrop>
             <Modal>
-                <Modal.Top icon={<TbSchool />} color="#2fcc88">학교 설정</Modal.Top>
+                <Modal.Top icon={<TbSchool />} color="#2fcc88">학교 수정하기</Modal.Top>
                 <div className={style.selectedSchool}>
                     <h2>설정된 학교</h2>
                     <div>
