@@ -35,6 +35,10 @@
 }
 
 .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 100%;
     height: 40px;
 
@@ -45,6 +49,8 @@
 
     color: var(--color-white);
     background-color: var(--color-black);
+
+    font-size: 13px;
 
     font-weight: 600;
 
