@@ -2,7 +2,6 @@ import Modal from "./common";
 import { TbSchool } from "react-icons/tb";
 import style from "./modal.module.scss";
 import { useState } from "react";
-import Select from "react-select";
 import { koreaEducationOffice } from "@/constant/koreaEducationOffice";
 
 function ModalSchoolSetting() {

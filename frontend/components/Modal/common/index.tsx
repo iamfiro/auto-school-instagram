@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import style from "./style.module.scss";
 import { IoCloseSharp } from "react-icons/io5";
+import modalStyle from '../modal.module.scss';
 
 interface TopProps {
     children: React.ReactNode;
@@ -44,6 +45,14 @@ function Backdrop({ children }: { children: React.ReactNode }) {
     );
 }
 
+function Button({ children, onClick }: { children: React.ReactNode, onClick: () => void }) {
+    return (
+        <button onClick={onClick} className={modalStyle.submit}>
+            {children}
+        </button>
+    );
+}
+
 function Modal({ children }: { children: React.ReactNode }) {
     return (
         <div className={style.modal} onClick={(e) => e.stopPropagation()}>
@@ -54,5 +63,6 @@ function Modal({ children }: { children: React.ReactNode }) {
 
 Modal.Backdrop = Backdrop;
 Modal.Top = Top;
+Modal.Button = Button;
 
 export default Modal;
