@@ -7,7 +7,6 @@ export default function Home() {
             <Header>
                 <Header.Box>
                     <Header.DatePicker />
-                    <Header.CurrentSchool />
                 </Header.Box>
                 <Header.Box>
                     <Header.APIDocs />

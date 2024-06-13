@@ -6,7 +6,6 @@ import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import { IoMdAdd } from "react-icons/io";
 import { FaCloudUploadAlt } from "react-icons/fa";
 import { SiDocsdotrs } from "react-icons/si";
-import { TbSchool } from "react-icons/tb";
 import Link from "next/link";
 
 // 박스 컴포넌트
@@ -15,16 +14,6 @@ function Box({ children }: { children: ReactNode }) {
         <div className={style.box}>
             {children}
         </div>
-    )
-}
-
-// 현재 학교 컴포넌트
-function CurrentSchool() {
-    return (
-        <Link href={'/?m=s'} className={style.currentSchool}>
-            <TbSchool />
-            <span>선린인터넷고등학교</span>
-        </Link>
     )
 }
 
@@ -91,7 +80,6 @@ Header.DatePicker = DatePicker;
 Header.CreateMeal = CreateMealButton;
 Header.ManualUpload = ManualUploadButton;
 Header.APIDocs = APIDocsButton;
-Header.CurrentSchool = CurrentSchool;
 Header.Box = Box;
 
 export default Header;
